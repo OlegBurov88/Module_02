@@ -10,6 +10,6 @@ def password(n):
 n = int(input('Введите число от 3 до 20: '))
 if 2 < n < 21:
     code = password(n)
-    print(code)
+    print(f'Пароль для чисела {n}: {code}')
 else:
     print('WASTED')
