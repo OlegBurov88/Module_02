@@ -44,9 +44,9 @@ area = [['*', '*', '*'], ['*', '*', '*'], ['*', '*', '*']]
 print('Добро пожаловать в крестики-нолики')
 print('----------------------------------')
 draw_area()
-for turn in range(1,10):
+for turn in range(1, 10):
     print(f'Ход: {turn}')
-    if turn % 2 ==0:
+    if turn % 2 == 0:
         turn_char = '0'
         print('Ходят нолики')
     else:
@@ -63,7 +63,7 @@ for turn in range(1,10):
 
     draw_area()
 
-    if check_winner() =="X":
+    if check_winner() == "X":
         print('Победа крестиков')
         break
     elif check_winner() == '0':
